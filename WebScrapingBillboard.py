@@ -51,8 +51,6 @@ for album in albums200 :
     information = tuple(albums.values())
     upload (information,dbname)
 
-
-import sqlite3
 conn  = sqlite3.connect ('Billboard.db')
 cur = conn.cursor ()
 x = cur.execute ("SELECT * FROM Billboard200")
